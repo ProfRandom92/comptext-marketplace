@@ -1,0 +1,7 @@
+interface:
+  display_name: "Check CompText Guard"
+  short_description: "Explain local guard decisions"
+  default_prompt: "Explain whether this repository action is allowed, warned, or blocked by CompText Guard."
+
+policy:
+  allow_implicit_invocation: false
