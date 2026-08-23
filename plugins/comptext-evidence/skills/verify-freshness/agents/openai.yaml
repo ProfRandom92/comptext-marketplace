@@ -1,0 +1,7 @@
+interface:
+  display_name: "Verify CompText Evidence Freshness"
+  short_description: "Check if completion evidence is still fresh"
+  default_prompt: "Verify whether the available completion evidence is newer than the latest successful mutation."
+
+policy:
+  allow_implicit_invocation: false
