@@ -99,6 +99,10 @@ The four plugins are local developer/research plugins and do not operate a CompT
 
 Do not put credentials, secret values, private prompts, or unnecessary raw source content into CompText fixtures or evidence traces.
 
+## License
+
+CompText Marketplace is licensed under the **Apache License 2.0**. See [`LICENSE`](LICENSE).
+
 ## Contributing
 
 Issues and focused pull requests are welcome. Good contributions are small, testable, and preserve the separation between context, evidence, policy, and benchmarking.
@@ -110,6 +114,8 @@ Before proposing a change:
 3. avoid adding large assets or documentation to the runtime path when they can remain deferred;
 4. do not turn fixture numbers into general performance claims;
 5. preserve failed checks and regressions instead of rewriting them into success.
+
+See [`CONTRIBUTING.md`](CONTRIBUTING.md) for contribution expectations and [`SECURITY.md`](SECURITY.md) for security reporting guidance.
 
 For security-sensitive findings, avoid publishing secrets or live credentials in an issue. Prefer a minimal reproduction against synthetic data.
 
