@@ -1,0 +1,7 @@
+interface:
+  display_name: "Compile CompText Context"
+  short_description: "Build minimal validated operational context"
+  default_prompt: "Compile the minimum operational context required for this task and report any missing required fields."
+
+policy:
+  allow_implicit_invocation: true
