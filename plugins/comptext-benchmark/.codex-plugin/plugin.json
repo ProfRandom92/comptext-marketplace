@@ -2,10 +2,17 @@
   "name": "comptext-benchmark",
   "version": "0.1.5",
   "description": "Run, inspect, and compare reproducible Raw vs CompText benchmarks with quality-first evidence.",
-  "author": {"name": "CompText Labs"},
+  "author": {
+    "name": "CompText Labs"
+  },
   "homepage": "https://github.com/ProfRandom92/comptext-marketplace/tree/main/plugins/comptext-benchmark",
   "repository": "https://github.com/ProfRandom92/comptext-marketplace",
-  "keywords": ["benchmark", "context-compression", "evaluation", "comptext"],
+  "keywords": [
+    "benchmark",
+    "context-compression",
+    "evaluation",
+    "comptext"
+  ],
   "skills": "./skills/",
   "interface": {
     "displayName": "CompText Benchmark",
@@ -18,7 +25,9 @@
     "privacyPolicyURL": "https://github.com/ProfRandom92/comptext-marketplace/blob/main/plugins/comptext-benchmark/PRIVACY.md",
     "termsOfServiceURL": "https://github.com/ProfRandom92/comptext-marketplace/blob/main/plugins/comptext-benchmark/TERMS.md",
     "brandColor": "#6A4BD8",
-    "defaultPrompt": ["Run a reproducible Raw vs CompText benchmark and report quality separately from token efficiency."],
+    "defaultPrompt": [
+      "Run a reproducible Raw vs CompText benchmark and report quality separately from token efficiency."
+    ],
     "screenshots": [],
     "logo": "./assets/logo-light.svg",
     "logoDark": "./assets/logo-dark.svg",

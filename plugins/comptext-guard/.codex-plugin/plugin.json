@@ -2,19 +2,35 @@
   "name": "comptext-guard",
   "version": "0.1.0",
   "description": "Apply small local safety hooks for autonomous repository work without expanding agent context.",
-  "author": {"name": "CompText Labs"},
+  "author": {
+    "name": "CompText Labs"
+  },
   "homepage": "https://github.com/ProfRandom92/comptext-marketplace/tree/main/plugins/comptext-guard",
   "repository": "https://github.com/ProfRandom92/comptext-marketplace",
-  "keywords": ["guard", "hooks", "safety", "comptext"],
+  "keywords": [
+    "guard",
+    "hooks",
+    "safety",
+    "comptext"
+  ],
   "skills": "./skills/",
   "interface": {
-    "displayName": "CompText Guard", "shortDescription": "Guard autonomous repo work.",
+    "displayName": "CompText Guard",
+    "shortDescription": "Guard autonomous repo work.",
     "longDescription": "Block secret reads and unscoped Git, GitHub, release, and deploy writes while warning on protected repository paths.",
-    "developerName": "CompText Labs", "category": "Developer Tools", "capabilities": [],
+    "developerName": "CompText Labs",
+    "category": "Developer Tools",
+    "capabilities": [],
     "websiteURL": "https://github.com/ProfRandom92/comptext-marketplace/tree/main/plugins/comptext-guard",
     "privacyPolicyURL": "https://github.com/ProfRandom92/comptext-marketplace/blob/main/plugins/comptext-guard/PRIVACY.md",
     "termsOfServiceURL": "https://github.com/ProfRandom92/comptext-marketplace/blob/main/plugins/comptext-guard/TERMS.md",
-    "brandColor": "#A85F00", "defaultPrompt": ["Check whether this repository action is compatible with the CompText Guard policy."],
-    "screenshots": [], "logo": "./assets/logo-light.svg", "logoDark": "./assets/logo-dark.svg", "composerIcon": "./assets/logo-dark.svg"
+    "brandColor": "#A85F00",
+    "defaultPrompt": [
+      "Check whether this repository action is compatible with the CompText Guard policy."
+    ],
+    "screenshots": [],
+    "logo": "./assets/logo-light.svg",
+    "logoDark": "./assets/logo-dark.svg",
+    "composerIcon": "./assets/logo-dark.svg"
   }
 }

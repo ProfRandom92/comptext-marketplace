@@ -33,5 +33,8 @@ def remote_reason(command: str) -> str | None:
         return f"Blocked by CompText Guard: GitHub {gh_verb} writes require explicit release scope."
     lowered = command.lower().replace("\\", "/")
     if any(item in lowered for item in BLOCKED_DEPLOY):
-        return "Blocked by CompText Guard: deploy/release commands require explicit release scope."
+        return (
+            "Blocked by CompText Guard: deploy/release commands "
+            "require explicit release scope."
+        )
     return None

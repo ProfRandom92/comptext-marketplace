@@ -2,21 +2,35 @@
   "name": "comptext-evidence",
   "version": "0.1.0",
   "description": "Verify evidence freshness before accepting AI completion claims.",
-  "author": {"name": "CompText Labs"},
+  "author": {
+    "name": "CompText Labs"
+  },
   "homepage": "https://github.com/ProfRandom92/comptext-marketplace/tree/main/plugins/comptext-evidence",
   "repository": "https://github.com/ProfRandom92/comptext-marketplace",
-  "keywords": ["evidence", "verification", "freshness", "comptext"],
+  "keywords": [
+    "evidence",
+    "verification",
+    "freshness",
+    "comptext"
+  ],
   "skills": "./skills/",
   "interface": {
     "displayName": "CompText Evidence",
     "shortDescription": "Verify evidence freshness.",
     "longDescription": "Deterministically check whether verification evidence is newer than the latest successful mutation before accepting a completion claim.",
-    "developerName": "CompText Labs", "category": "Developer Tools", "capabilities": [],
+    "developerName": "CompText Labs",
+    "category": "Developer Tools",
+    "capabilities": [],
     "websiteURL": "https://github.com/ProfRandom92/comptext-marketplace/tree/main/plugins/comptext-evidence",
     "privacyPolicyURL": "https://github.com/ProfRandom92/comptext-marketplace/blob/main/plugins/comptext-evidence/PRIVACY.md",
     "termsOfServiceURL": "https://github.com/ProfRandom92/comptext-marketplace/blob/main/plugins/comptext-evidence/TERMS.md",
     "brandColor": "#007E8A",
-    "defaultPrompt": ["Verify whether the completion evidence is fresh relative to the latest successful mutation."],
-    "screenshots": [], "logo": "./assets/logo-light.svg", "logoDark": "./assets/logo-dark.svg", "composerIcon": "./assets/logo-dark.svg"
+    "defaultPrompt": [
+      "Verify whether the completion evidence is fresh relative to the latest successful mutation."
+    ],
+    "screenshots": [],
+    "logo": "./assets/logo-light.svg",
+    "logoDark": "./assets/logo-dark.svg",
+    "composerIcon": "./assets/logo-dark.svg"
   }
 }

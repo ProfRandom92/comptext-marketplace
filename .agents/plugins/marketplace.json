@@ -6,26 +6,50 @@
   "plugins": [
     {
       "name": "comptext-benchmark",
-      "source": {"source": "local", "path": "./plugins/comptext-benchmark"},
-      "policy": {"installation": "AVAILABLE", "authentication": "ON_INSTALL"},
+      "source": {
+        "source": "local",
+        "path": "./plugins/comptext-benchmark"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
       "category": "Developer Tools"
     },
     {
       "name": "comptext-evidence",
-      "source": {"source": "local", "path": "./plugins/comptext-evidence"},
-      "policy": {"installation": "AVAILABLE", "authentication": "ON_INSTALL"},
+      "source": {
+        "source": "local",
+        "path": "./plugins/comptext-evidence"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
       "category": "Developer Tools"
     },
     {
       "name": "comptext-context",
-      "source": {"source": "local", "path": "./plugins/comptext-context"},
-      "policy": {"installation": "AVAILABLE", "authentication": "ON_INSTALL"},
+      "source": {
+        "source": "local",
+        "path": "./plugins/comptext-context"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
       "category": "Developer Tools"
     },
     {
       "name": "comptext-guard",
-      "source": {"source": "local", "path": "./plugins/comptext-guard"},
-      "policy": {"installation": "AVAILABLE", "authentication": "ON_INSTALL"},
+      "source": {
+        "source": "local",
+        "path": "./plugins/comptext-guard"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
       "category": "Developer Tools"
     }
   ]
