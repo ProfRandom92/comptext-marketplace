@@ -39,6 +39,10 @@ comptext-context    cabe9c9f623ca368f7a0c3438ab57eb96f4012328a77ebee3c329931161e
 comptext-guard      cebe3f6d0d7ecb3b44ad1ee4bda8d3b050b5932501ce9703844d3ee23fbe84fd
 ```
 
+## License
+
+Released under the **Apache License 2.0**. See `LICENSE` in the repository root.
+
 ## Scope
 
 CompText remains experimental developer tooling. Guard decisions are bounded policy decisions rather than a sandbox or proof of security. Benchmark numbers apply to the exact fixtures and execution conditions that produced them; the bundled 58% token-reduction result is not a universal performance claim.
