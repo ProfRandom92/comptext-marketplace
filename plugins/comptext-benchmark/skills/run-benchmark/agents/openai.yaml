@@ -1,0 +1,7 @@
+interface:
+  display_name: "Run CompText Benchmark"
+  short_description: "Run Raw vs CompText benchmarks reproducibly"
+  default_prompt: "Run a reproducible Raw vs CompText benchmark, preserve quality evidence, and report efficiency separately from fidelity."
+
+policy:
+  allow_implicit_invocation: true
