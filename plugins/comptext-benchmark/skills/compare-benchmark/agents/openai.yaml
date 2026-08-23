@@ -1,0 +1,7 @@
+interface:
+  display_name: "Compare CompText Benchmark"
+  short_description: "Judge benchmark deltas with evidence"
+  default_prompt: "Compare completed CompText benchmark artifacts, separate quality from efficiency, and flag any token win that causes a regression."
+
+policy:
+  allow_implicit_invocation: true
