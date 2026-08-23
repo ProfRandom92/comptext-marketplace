@@ -1,0 +1,27 @@
+{
+  "name": "comptext-context",
+  "version": "0.1.0",
+  "description": "Build deterministic operational context from explicit requirements before loading it into an agent.",
+  "author": {"name": "CompText Labs"},
+  "homepage": "https://github.com/ProfRandom92/comptext-marketplace/tree/main/plugins/comptext-context",
+  "repository": "https://github.com/ProfRandom92/comptext-marketplace",
+  "keywords": ["context", "compression", "deterministic", "comptext"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "CompText Context",
+    "shortDescription": "Compile minimal context.",
+    "longDescription": "Compile explicit requirements into a compact operational context with constraints, order, dependencies, blockers, recovery paths, validation, and a canonical digest.",
+    "developerName": "CompText Labs",
+    "category": "Developer Tools",
+    "capabilities": [],
+    "websiteURL": "https://github.com/ProfRandom92/comptext-marketplace/tree/main/plugins/comptext-context",
+    "privacyPolicyURL": "https://github.com/ProfRandom92/comptext-marketplace/blob/main/plugins/comptext-context/PRIVACY.md",
+    "termsOfServiceURL": "https://github.com/ProfRandom92/comptext-marketplace/blob/main/plugins/comptext-context/TERMS.md",
+    "brandColor": "#1B76FF",
+    "defaultPrompt": ["Compile the minimum operational context required for this task and report missing required fields."],
+    "screenshots": [],
+    "logo": "./assets/logo-light.svg",
+    "logoDark": "./assets/logo-dark.svg",
+    "composerIcon": "./assets/logo-dark.svg"
+  }
+}
