@@ -1,0 +1,7 @@
+interface:
+  display_name: "Inspect CompText Benchmark"
+  short_description: "Inspect run state and failure evidence"
+  default_prompt: "Inspect the exact CompText benchmark run, report structured status and evidence, and preserve the frozen manifest on failures."
+
+policy:
+  allow_implicit_invocation: true
