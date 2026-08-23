@@ -21,3 +21,7 @@ A useful pull request should explain:
 4. whether it changes context cost, security policy, evidence semantics, or benchmark interpretation.
 
 Prefer focused changes over cross-plugin coupling. Context, evidence, guard policy, and benchmarking should remain independently understandable.
+
+## License of contributions
+
+Unless explicitly stated otherwise, contributions intentionally submitted to this repository are licensed under the **Apache License 2.0**, consistent with the repository license.
