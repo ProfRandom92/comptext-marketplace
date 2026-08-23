@@ -10,6 +10,7 @@
 - CompText Benchmark 0.1.5 — reproducible Raw vs CompText benchmark receipts.
 - Compact light/dark marketplace assets for all four plugins.
 - Fresh Git-backed installation path through `ProfRandom92/comptext-marketplace`.
+- Apache License 2.0 for the standalone marketplace repository.
 
 ### Verification
 
