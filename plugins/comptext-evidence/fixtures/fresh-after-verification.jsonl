@@ -1,0 +1,5 @@
+{"seq":1,"type":"mutation","success":true}
+{"seq":2,"type":"verification","success":true}
+{"seq":3,"type":"mutation","success":true}
+{"seq":4,"type":"verification","success":true}
+{"seq":5,"type":"completion_claim"}
