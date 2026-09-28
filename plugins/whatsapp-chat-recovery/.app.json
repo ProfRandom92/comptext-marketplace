@@ -1,0 +1,12 @@
+{
+  "apps": {
+    "google_drive": {
+      "id": "connector_5f3c8c41a1e54ad7a76272c89e2554fa",
+      "optional": true
+    },
+    "desktop_commander": {
+      "id": "asdk_app_6a057d268ebc81919918d37eec718425",
+      "optional": true
+    }
+  }
+}

@@ -12,6 +12,7 @@ Instead of pushing more raw material into an agent, the plugins focus on compact
 | **CompText Evidence** | Check whether verification evidence is still fresh after the latest successful mutation. |
 | **CompText Guard** | Apply local pre-tool policy for secret reads, remote writes, releases, and deploy actions. |
 | **CompText Benchmark** | Compare Raw vs CompText workflows while keeping quality and efficiency separate. |
+| **WhatsApp Chat Recovery** | Read-only inventory and triage for authorized WhatsApp backups, exports, and browser artifacts. |
 
 ## Install
 
@@ -22,6 +23,7 @@ codex plugin add comptext-context@comptext-marketplace
 codex plugin add comptext-evidence@comptext-marketplace
 codex plugin add comptext-guard@comptext-marketplace
 codex plugin add comptext-benchmark@comptext-marketplace
+codex plugin add whatsapp-chat-recovery@comptext-marketplace
 ```
 
 Check the installation with:
@@ -68,6 +70,10 @@ Use `CompText Benchmark` to measure Raw and CompText paths under the same frozen
 
 The bundled deterministic smoke fixture currently reports Raw `1000` vs CompText `420` input/effective-context tokens — a **58% reduction in that fixture** with no recorded fixture quality regression. This is a reproducible smoke result, not a universal performance claim.
 
+### WhatsApp Chat Recovery
+
+Use `WhatsApp Chat Recovery` to inventory authorized backups, multilingual exports, and copied Chromium/WhatsApp Web artifacts. It does not bypass backup encryption or claim that a text export can be imported as a native chat. Its fragment scanner checks CRC32C-valid LevelDB physical records and reports offsets and counts without printing payloads. Run its synthetic tests from `plugins/whatsapp-chat-recovery` with `python -m unittest discover -s tests -v`.
+
 ## Design principles
 
 ```text
@@ -84,18 +90,18 @@ The plugins deliberately remain narrow. Large research experiments, historical p
 
 The current release process checks:
 
-- current OpenAI plugin validation for all four plugins;
+- current OpenAI plugin validation for the four CompText core plugins;
 - Plugin Eval for packaging and context cost;
 - deterministic context/evidence receipts;
 - Benchmark Lab regression tests;
 - Guard policy regression tests, including chained Git writes and interpreter-based secret reads;
 - clean installation from a fresh `CODEX_HOME` using this Git repository as the marketplace source.
 
-Release claims should always be tied to the exact tagged revision and its verification output.
+The WhatsApp Chat Recovery package has a separate synthetic regression suite for its LevelDB fragment scanner. Release claims should always be tied to the exact tagged revision and its verification output.
 
 ## Privacy and scope
 
-The four plugins are local developer/research plugins and do not operate a CompText-hosted telemetry service. Each plugin includes its own `PRIVACY.md` and `TERMS.md`.
+The four CompText core plugins are local developer/research plugins. WhatsApp Chat Recovery operates only on user-authorized material and uses optional connected Google Drive or Desktop Commander tools when available. The marketplace does not operate a hosted telemetry service. Each plugin includes its own `PRIVACY.md` and `TERMS.md`.
 
 Do not put credentials, secret values, private prompts, or unnecessary raw source content into CompText fixtures or evidence traces.
 
@@ -121,11 +127,12 @@ For security-sensitive findings, avoid publishing secrets or live credentials in
 
 ## Status
 
-This repository is the canonical public distribution source for the CompText Marketplace. The initial public release contains:
+This repository is the canonical public distribution source for the CompText Marketplace. Current marketplace packages include:
 
 - `comptext-context` `0.1.0`
 - `comptext-evidence` `0.1.0`
 - `comptext-guard` `0.1.0`
 - `comptext-benchmark` `0.1.5`
+- `whatsapp-chat-recovery` `1.2.0`
 
 CompText remains experimental developer tooling. Treat receipts and benchmark outputs as evidence for the exact inputs and execution conditions that produced them.
