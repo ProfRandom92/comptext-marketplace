@@ -1,0 +1,20 @@
+{
+  "name": "whatsapp-chat-recovery",
+  "version": "1.2.0",
+  "description": "Privacy-first WhatsApp recovery and read-only forensic triage for backups, exports, Chromium IndexedDB/LevelDB artifacts, Google Drive, and local evidence copies.",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "WhatsApp Chat Recovery",
+    "shortDescription": "Recover and audit your own WhatsApp backups and browser artifacts.",
+    "longDescription": "Guided WhatsApp recovery with read-only inventory of Android backups, exports, and Chromium/WhatsApp Web IndexedDB-LevelDB artifacts. Includes multilingual export detection, hashing, exact JID/LID searches, and forensic handoff guidance. Native cloud backups must still be restored through WhatsApp; the plugin never bypasses encryption. Adds CRC32C-validated scanning for intact LevelDB log records embedded in fragments, with offsets and hit counts but no payload output.",
+    "developerName": "Alex",
+    "category": "Utilities",
+    "capabilities": [
+      "Read"
+    ]
+  },
+  "author": {
+    "name": "Alex"
+  },
+  "apps": "./.app.json"
+}
