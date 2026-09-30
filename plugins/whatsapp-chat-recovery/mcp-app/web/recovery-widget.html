@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    :root { color-scheme: light dark; font: 14px/1.45 system-ui, sans-serif; }
+    body { margin: 0; padding: 14px; background: transparent; }
+    main { border: 1px solid color-mix(in srgb, currentColor 18%, transparent); border-radius: 16px; padding: 16px; }
+    h2 { margin: 0 0 8px; font-size: 18px; }
+    .status { display: inline-block; padding: 3px 8px; border-radius: 999px; background: #11845b22; color: #08734d; font-weight: 650; }
+    .blocked { background: #c6362b22; color: #a32921; }
+    h3 { margin: 16px 0 4px; font-size: 13px; }
+    ul { margin: 4px 0; padding-left: 20px; }
+    p { margin: 6px 0; }
+    .muted { opacity: .72; }
+  </style>
+</head>
+<body><main id="app"><p class="muted">Recovery-Ergebnis wird geladen …</p></main>
+<script type="module">
+  const data = window.openai?.toolOutput ?? {};
+  const esc = (value) => String(value ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+  const list = (items) => items?.length ? `<ul>${items.map(x => `<li>${esc(typeof x === "string" ? x : JSON.stringify(x))}</li>`).join("")}</ul>` : "";
+  document.querySelector("#app").innerHTML = `
+    <h2>${esc(data.title ?? "WhatsApp Recovery")}</h2>
+    ${data.status ? `<span class="status ${data.status === "blocked" ? "blocked" : ""}">${esc(data.status)}</span>` : ""}
+    ${data.route ? `<h3>Sicherste Route</h3><p>${esc(data.route)}</p>` : ""}
+    ${data.prerequisites ? `<h3>Voraussetzungen</h3>${list(data.prerequisites)}` : ""}
+    ${data.filesReviewed !== undefined ? `<p><strong>${esc(data.filesReviewed)}</strong> Dateien geprüft, <strong>${esc(data.exactHitFiles)}</strong> mit exakten Treffern.</p>` : ""}
+    ${data.warnings ? `<h3>Warnungen</h3>${list(data.warnings)}` : ""}
+    ${data.limitations ? `<h3>Grenzen</h3>${list(data.limitations)}` : ""}
+    <h3>Nächster Schritt</h3><p>${esc(data.nextAction ?? "Keine Aktion empfohlen.")}</p>`;
+</script></body>
+</html>

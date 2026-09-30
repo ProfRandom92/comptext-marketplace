@@ -72,7 +72,7 @@ The bundled deterministic smoke fixture currently reports Raw `1000` vs CompText
 
 ### WhatsApp Chat Recovery
 
-Use `WhatsApp Chat Recovery` to inventory authorized backups, multilingual exports, and copied Chromium/WhatsApp Web artifacts. It does not bypass backup encryption or claim that a text export can be imported as a native chat. Its fragment scanner checks CRC32C-valid LevelDB physical records and reports offsets and counts without printing payloads. Run its synthetic tests from `plugins/whatsapp-chat-recovery` with `python -m unittest discover -s tests -v`.
+Use `WhatsApp Chat Recovery` to inventory authorized backups, multilingual exports, and copied Chromium/WhatsApp Web artifacts. It does not bypass backup encryption or claim that a text export can be imported as a native chat. Its fragment scanner checks CRC32C-valid LevelDB physical records and reports offsets and counts without printing payloads. The optional OpenAI MCP app keeps local evidence acquisition separate from remote route planning and audit-summary review. Run the Python synthetic tests from `plugins/whatsapp-chat-recovery` with `python -m unittest discover -s skills/whatsapp-recovery/tests -v`, and the MCP app tests from its `mcp-app` directory with `npm test`.
 
 ## Design principles
 
@@ -133,6 +133,6 @@ This repository is the canonical public distribution source for the CompText Mar
 - `comptext-evidence` `0.1.0`
 - `comptext-guard` `0.1.0`
 - `comptext-benchmark` `0.1.5`
-- `whatsapp-chat-recovery` `1.2.0`
+- `whatsapp-chat-recovery` `1.3.0`
 
 CompText remains experimental developer tooling. Treat receipts and benchmark outputs as evidence for the exact inputs and execution conditions that produced them.
