@@ -97,4 +97,4 @@ A parser failing at byte zero only rules out parsing that file as an intact log 
 
 The scanner is read-only, limits scans to 64 MiB by default, reports offsets, physical record types, lengths, and exact UTF-8 identifier hit counts, and never prints payload bytes. Supply `--source-offset` only when the fragment's original byte offset in the log is known; this enables 32-KB block-boundary validation. A valid physical record proves only that its header and CRC32C match. It does not establish that the record belongs to WhatsApp or reconstruct a complete logical write batch. Zero hits are bounded to the scanned bytes and cannot exclude partial records or data split across fragments.
 
-Run synthetic regression tests from the plugin directory with `python -m unittest discover -s tests -v`.
+Run synthetic regression tests from the plugin directory with `python -m unittest discover -s skills/whatsapp-recovery/tests -v`.

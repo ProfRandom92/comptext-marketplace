@@ -1,16 +1,21 @@
 {
   "name": "whatsapp-chat-recovery",
-  "version": "1.2.0",
-  "description": "Privacy-first WhatsApp recovery and read-only forensic triage for backups, exports, Chromium IndexedDB/LevelDB artifacts, Google Drive, and local evidence copies.",
+  "version": "1.3.0",
+  "description": "Privacy-first WhatsApp recovery, read-only forensic triage, and a stateless OpenAI MCP planning app.",
   "skills": "./skills/",
   "interface": {
     "displayName": "WhatsApp Chat Recovery",
     "shortDescription": "Recover and audit your own WhatsApp backups and browser artifacts.",
-    "longDescription": "Guided WhatsApp recovery with read-only inventory of Android backups, exports, and Chromium/WhatsApp Web IndexedDB-LevelDB artifacts. Includes multilingual export detection, hashing, exact JID/LID searches, and forensic handoff guidance. Native cloud backups must still be restored through WhatsApp; the plugin never bypasses encryption. Adds CRC32C-validated scanning for intact LevelDB log records embedded in fragments, with offsets and hit counts but no payload output.",
+    "longDescription": "Guided WhatsApp recovery with read-only inventory of Android backups, exports, and Chromium/WhatsApp Web IndexedDB-LevelDB artifacts, plus a stateless OpenAI MCP planning app and in-chat widget. Local auditing and remote decision support stay separated so source artifacts, credentials, and message bodies are not sent to the MCP app.",
     "developerName": "Alex",
     "category": "Utilities",
     "capabilities": [
-      "Read"
+      "Read",
+      "Interactive"
+    ],
+    "defaultPrompt": [
+      "Plan the safest recovery route for my own WhatsApp data.",
+      "Review this metadata-only WhatsApp artifact audit."
     ]
   },
   "author": {
